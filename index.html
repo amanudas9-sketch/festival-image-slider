@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Slider | Festival Nights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <h1>Festival Nights in the Square</h1>
+      <p>A photo gallery on an infinite-loop slider built with plain HTML, CSS and JavaScript.</p>
+    </header>
+
+    <!-- Only real slides go here. slider.js handles the looping. -->
+    <section class="gallery" id="gallery" aria-roledescription="carousel" aria-label="Festival photo slider">
+      <div class="gallery__window">
+        <ul class="gallery__track">
+          <li class="card">
+            <img src="images/photo-1.jpg" alt="Crowds gathered in the square beneath glowing pagoda temples under a stormy dusk sky" style="object-position: center 40%">
+            <p class="card__title">Dusk in the square</p>
+          </li>
+          <li class="card">
+            <img src="images/photo-2.jpg" alt="People standing on a wooden chariot with a red canopy, surrounded by a huge festival crowd" style="object-position: center 35%">
+            <p class="card__title">Chariot procession</p>
+          </li>
+          <li class="card">
+            <img src="images/photo-3.jpg" alt="Carved wooden temple lit up at night with a crowd seated on its steps" style="object-position: center 72%">
+            <p class="card__title">Temple aglow at night</p>
+          </li>
+          <li class="card">
+            <img src="images/photo-4.jpg" alt="Child dressed as the Kumari in a gold crown, red face paint and marigold garlands" style="object-position: center 30%">
+            <p class="card__title">The Kumari in ceremonial dress</p>
+          </li>
+          <li class="card">
+            <img src="images/photo-5.jpg" alt="Crowd gathered at the Kal Bhairav shrine beside a pagoda temple at night" style="object-position: center 78%">
+            <p class="card__title">Kal Bhairav shrine at night</p>
+          </li>
+        </ul>
+
+        <button class="nav nav--prev" type="button" aria-label="Previous slide">&#8249;</button>
+        <button class="nav nav--next" type="button" aria-label="Next slide">&#8250;</button>
+        <span class="counter" aria-live="polite"></span>
+      </div>
+
+      <div class="gallery__bar">
+        <div class="pager" aria-label="Choose slide"></div>
+        <button class="toggle" type="button" aria-label="Pause autoplay">Pause</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="slider.js"></script>
+</body>
+</html>
